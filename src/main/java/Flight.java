@@ -22,4 +22,8 @@ public class Flight {
         return this.destination;
     }
 
+    public int getPassengerList() {
+        return this.plane.getPassengerList();
+    }
+
 }
