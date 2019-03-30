@@ -13,7 +13,7 @@ public class PassengerTest {
     }
 
     @Test
-    public void GetName() {
+    public void getNameTest() {
         assertEquals("Bob", passenger.GetName());
     }
 
