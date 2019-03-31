@@ -14,4 +14,6 @@ public enum PlaneType {
         return capacity;
     }
 
+    //pretyname, a veces no devuelve el type, poner un string para ello
+
 }

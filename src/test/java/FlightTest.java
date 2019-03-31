@@ -11,9 +11,9 @@ public class FlightTest {
 
     @Before
     public void setup() {
-        passenger = new Passenger("Bob");
+        passenger = new Passenger("Bob", 200);
         plane = new Plane(PlaneType.BOEING747, "Iberia");
-        flight = new Flight(plane, 001, "Edinburgh");
+        flight = new Flight(plane, 001, "Edinburgh", 100);
     }
 
     @Test
@@ -21,6 +21,7 @@ public class FlightTest {
         assertEquals(PlaneType.BOEING747, flight.getPlane());
         assertEquals(001, flight.getFlightNumber());
         assertEquals("Edinburgh", flight.getDestination());
+        assertEquals(100, flight.getPrice());
     }
 
     @Test

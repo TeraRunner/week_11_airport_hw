@@ -10,7 +10,7 @@ public class PlaneTest {
 
     @Before
     public void setup() {
-        passenger = new Passenger("Bob");
+        passenger = new Passenger("Bob", 200);
         plane = new Plane(PlaneType.BOEING747, "Iberia");
     }
 
