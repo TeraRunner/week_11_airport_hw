@@ -35,9 +35,11 @@ public class AirportTest {
         assertEquals(1, airport.getHangarSize());
     }
 
-//    @Test
-//    public void sellTickectTest() {
-//        assertEquals(,);
-//    }
+    @Test
+    public void sellTickectTest() {
+        assertEquals(200, passenger.getWallet());
+        airport.sellTicket(passenger, flight1);
+        assertEquals(100, passenger.getWallet());
+    }
 
 }

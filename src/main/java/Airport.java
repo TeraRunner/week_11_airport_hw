@@ -23,8 +23,8 @@ public class Airport {
         hangar.add(plane);
     }
 
-
+    public void sellTicket(Passenger passenger, Flight flight) {
+        passenger.payTicket(passenger, flight);
+    }
 
 }
-
-//Sell tickets for flight
